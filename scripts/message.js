@@ -22,7 +22,7 @@
     var controller={
         view:null,
         MessageList:null,
-        init:function (view) {
+        init:function (view,model) {
             this.view=view
             this.MessageList=view.querySelector('#MessageList')
             this.form=view.querySelector('form')
@@ -61,5 +61,5 @@
             });
         }
     }
-    controller.init(view)
+    controller.init(view,model)
 }.call()
