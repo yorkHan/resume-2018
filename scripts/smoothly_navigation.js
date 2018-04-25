@@ -19,7 +19,6 @@
             var aTags=this.view.querySelectorAll('nav.meau>ul>li.subMean>a')
             for(let i=0;i<aTags.length;i++){
                 aTags[i].onclick=(x)=>{
-                    x.preventDefault()
                     let a=x.currentTarget
                     let href=a.getAttribute('href')
                     let element=document.querySelector(href)

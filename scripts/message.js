@@ -5,13 +5,10 @@
             var query = new AV.Query('Messageboard');
             return query.find()
         },
-        save:function(name,content){
+        save:function(object){
             var Messageboard = AV.Object.extend('Messageboard');
             var message = new Messageboard();
-            return message.save({
-                        name:name,
-                        content:content
-                    })
+            return message.save(object)
         },
         init:function () {
             var APP_ID = 'M9QQLN7KtQwtcCgoeHKCxf0X-gzGzoHsz';
@@ -41,7 +38,7 @@
             let myForm=this.form
             let name=myForm.querySelector('input[name=name]').value
             let content=myForm.querySelector('input[name=content]').value
-            this.model.save(name,content).then(function (object) {
+            this.model.save({'name':name,'content':content}).then(function (object) {
                 var li=document.createElement('li')
                 li.innerText=`${object.attributes.name}:${object.attributes.content}`
                 var MessageList=document.querySelector('#MessageList')
