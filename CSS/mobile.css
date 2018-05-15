@@ -318,6 +318,10 @@ section.portfolio .swiper-container {
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.514);
 }
+section.portfolio .swiper-container img{
+    width: 80vw;
+    height: 60vw;
+}
 section.portfolio .swiper-button-prev{
     display: none;
 }

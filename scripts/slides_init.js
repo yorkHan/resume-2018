@@ -19,12 +19,22 @@
         init:function (view) {
             this.view=view
             this.initSwiper()
+            // this.openURL('#myNav','https://yorkhan.github.io/myNav/index.html')
+            // this.openURL('#canvas','https://yorkhan.github.io/canvas_demo/index.html')
+            // this.openURL('#appleSlides','https://yorkhan.github.io/Gallery/index.html')
+            
         },
         initSwiper:function () {
                 this.swiper = new Swiper (
                     view.querySelector('.swiper-container'), 
                     this.swiperOptions
             )
+        },
+        openURL(selector,url){
+            document.querySelector(selector).onclick=function(){
+                console.log(1)
+                window.location.assign(url);
+            }
         }
     }
     controller.init(view)

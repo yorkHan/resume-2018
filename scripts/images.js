@@ -1,9 +1,0 @@
-document.getElementById('canvas-demo').onclick=function(){
-    window.location.assign('https://yorkhan.github.io/canvas_demo/index.html');
-}
-document.getElementById('myNav').onclick=function(){
-    window.location.assign('https://yorkhan.github.io/myNav/index.html');
-}
-document.getElementById('appleSlides').onclick=function(){
-    window.location.assign('https://yorkhan.github.io/Gallery/index.html');
-}
