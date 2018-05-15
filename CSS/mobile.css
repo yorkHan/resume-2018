@@ -141,7 +141,7 @@ a{
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 .text .welcome{
-    padding: 2vw 2vw;
+    padding: 1vw 2vw;
     line-height: 3vw;
     display: inline-block;
     background-color: #E8676B;
@@ -218,7 +218,7 @@ hr{
 .usercard footer.media>a {
     display: inline-block;
     border-radius: 50%;
-    width: 10vw;
+    width: 8vw;
     line-height: 20px;
     padding: 1vw 0;
     margin: 0 1vw;

@@ -1,3 +1,5 @@
-setTimeout(function(){
-    siteWelcome.classList.remove('active')
-},1000)
+!function(){
+    setTimeout(function(){
+        window.location.href="./main.html"
+    },1000)
+}.call()
