@@ -184,13 +184,14 @@ hr{
 }
 .textAndPicture{
     background-color: #FFF;
-    padding: 30px;
+    padding: 50px;
 }
 .usercard .info{
     display: block;
     width: 60%;
-    margin-top: 2vw;
+    margin-top: 30px;
     border-top:1px solid #ddd;
+    padding-top:30px;
     float: right;
 }
 .usercard dl dt{

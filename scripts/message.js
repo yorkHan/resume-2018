@@ -49,7 +49,6 @@
         loadMessages:function(){
             this.model.fetch().then((Messages) =>{
                 let Array=Messages.map(item=>item.attributes)
-                console.log(Array)
                 Array.forEach(item => {
                     var li=document.createElement('li')
                     li.innerText=`${item.name}:${item.content}`
