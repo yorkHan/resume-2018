@@ -2,14 +2,13 @@
 <html lang="zh-hans">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
     <link rel="stylesheet" href="./CSS/loading.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
-    <link rel="stylesheet" href="./CSS/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
-    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./vendors/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./CSS/main.css" media="(min-width:500px)">
+    <link rel="stylesheet" href="./CSS/mobile.css" media="(max-width:500px)">
 </head>
 <body>
     <div id="siteWelcome" class="site-welcome active">
@@ -54,38 +53,38 @@
         <div data-x id="about" class="usercard">
             <div class="textAndPicture clearfix">
                 <div class="pic">
-                    <img src="./images/avatar.png" style="width:299px;height:347px" alt="头像">
+                    <img src="./images/avatar.png" alt="头像">
                 </div>
                 <div class="text">
                     <div class="profile">
-                    <span class="welcome">Hello
-                        <span class="triangle"></span>
-                    </span>
-                    <h1>韩禹</h1>
-                    <p>Web前端开发工程师</p>
-                    <hr>
+                        <span class="welcome">Hello
+                            <span class="triangle"></span>
+                        </span>
+                        <h1>韩禹</h1>
+                        <p>Web前端开发工程师</p>
+                    </div>
+                </div>
+                <div class="info">
                     <dl>
                         <dt>年龄</dt>
                         <dd>25</dd>
                         <dt>所在时间</dt>
                         <dd>苏州</dd>
                         <dt>E-mail</dt>
-                        <dd>17315041620@163.com</dd>
+                        <dd>393900482@qq.com</dd>
                         <dt>手机号码</dt>
-                        <dd>17315041620</dd>
+                        <dd>xxxxxxxx</dd>
+                        <dt>专业</dt>
+                        <dd>计算机网络</dd>
+                        <dt>学历</dt>
+                        <dd>大专</dd>
                     </dl>
-                </div>
                 </div> 
             </div>
             <footer class="media">
                 <a href="#">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-dianhua"></use>
                     </svg>
                 </a>
                 <a href="#">
@@ -106,11 +105,6 @@
                 <a href="#">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-gongzhonghao"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
                     </svg>
                 </a>
             </footer>  
@@ -195,7 +189,9 @@
             <input type="submit" value="提交">
         </form>
     </section>
-    <script src="//cdn1.lncld.net/static/js/3.6.7/av-min.js"></script>
+    <script src="./vendors/LeanCloud/av-min.js"></script>
+    <script src="./vendors/swiper/swiper.min.js"></script>
+    <script src="//at.alicdn.com/t/font_621912_9r2kl0u76xzb0529.js"></script>
     <script src="./scripts/slides_init.js"></script>
     <script src="./scripts/Tween.js"></script>
     <script src="./scripts/auto_slide_up.js"></script>

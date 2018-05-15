@@ -2,13 +2,13 @@ body{
     background-color: #EFEFEF;
     margin: 0;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
+
+*{margin:0;padding:0;}
+
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
 }
+
 .icon {
     width: 1em; height: 1em;
     vertical-align: -0.15em;
@@ -27,7 +27,7 @@ a{
 .topNavBar{
     padding: 20px 0px 20px 0px;
     position: fixed;
-    height: 40px;
+    height: 5vw;
     top:0;
     left:0;
     width:100%;
@@ -52,8 +52,7 @@ a{
 .topNavBar nav>ul>li{
     float: left;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 1.5vw;
 }
 .topNavBar .subMean>ul{
     display: none;
@@ -62,7 +61,7 @@ a{
     list-style: none;
     display: block;
     position: absolute;
-    top:100%;
+    top:50%;
     background-color: white;
     padding: 10px 20px;
     right: 0;
@@ -80,12 +79,9 @@ a{
 }
 .topNavBar nav>ul>li>a{
     display: block;
-    font-size: 16px;
+    font-size: 3vw;
     color:inherit;
     font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top:3px solid transparent;
     border-bottom:3px solid transparent;
 }
 .topNavBar .subMean.highlight::after,
@@ -119,42 +115,47 @@ a{
 }
 .topNavBar .logo{
     font-family: "Arial Rounded MT Bold";
-    font-size: 30px;
+    font-size: 5vw;
 }
 .topNavBar .logo .rs{ 
-    margin-right: 4px;
+    margin-right: 1vw;
     color:#E8676B;
 }
 .topNavBar .logo .card { 
     color:#c1c3c7;
 }
 .banner{
-    height: 515px;
+    height: 100vw;
     background-position: center center;
     background-size:cover;
 }
 .banner .mask{
-    height: 515px;
+    height: 100vw;
     background-color: rgba(0, 0, 0, 0.26);
 }
 .usercard{
-    max-width: 940px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -360px;
+    margin-top: -50vw;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 .text .welcome{
-    padding: 4px 16px;
-    line-height: 22px;
+    padding: 2vw 2vw;
+    line-height: 3vw;
     display: inline-block;
     background-color: #E8676B;
     color: white;
     position: relative;
+    font-size: 1vw;
 }
 .text h1{
-    margin-top:18px;
+    font-size: 5vw;
+    margin-top:2vw;
     font-family: sans-serif;
+}
+.text p{
+    font-size: 2vw;
 }
 hr{
     height: 0;
@@ -164,7 +165,7 @@ hr{
 
 .triangle{
     display: block;
-    border: 10px solid transparent;
+    border: 5px solid transparent;
     width: 0;
     border-left-color:#E8676B;
     border-top:0;
@@ -172,66 +173,69 @@ hr{
     top:100%;
 }
 .usercard .pic{
+    display: block;
     float: left;
 }
 .usercard .pic>img{
-    height: 260px;
+    height: 20vw;
+    width: 16vw;
 }
 .usercard .text{
     float: right;
-    margin-left: 10px;
-    width: 60%;
+    margin-left: 2vw;
+    width: 40vw;
 }
 .textAndPicture{
     background-color: #FFF;
-    padding: 30px;
+    padding: 5vw;
+    position: relative;
 }
 .usercard .info{
     display: block;
-    width: 60%;
     margin-top: 2vw;
+    padding-top: 5vw;
     border-top:1px solid #ddd;
-    float: right;
-}
-.usercard dl dt{
     float: left;
-    width: 15%;
-    padding: 5px 0;
+}
+.usercard .info>dl dt{
+    float: left;
+    width: 42%;
+    font-size: 2vw;
     font-weight: bold;
     font-family: sans-serif;
 }
 .usercard dl dd{
     float: left;
-    width: 30%;
-    padding: 5px 0;
+    width: 50%;
+    font-size: 1vw;
     color: gray;
 }
 .usercard footer.media {
     background: #E8676B;
-    padding: 20px;
+    padding: 2vw;
     text-align: center;
 }
 .usercard footer.media>a {
     display: inline-block;
     border-radius: 50%;
-    width: 40px;
+    width: 10vw;
     line-height: 20px;
-    padding: 10px 0;
-    margin: 0 20px;
+    padding: 1vw 0;
+    margin: 0 1vw;
 }
 .usercard footer.media>a:hover{
     background: rgb(223, 51, 56);
 }
 .usercard svg{
-    width: 20px;
-    height: 20px;
+    width: 5vw;
+    height: 5vw;
     fill: white;
     vertical-align: top;
 }
 body>main .downloadResume{
     display: inline-block;
     border: 1px solid rgba(128, 128, 128, 0.438);    
-    padding: 20px 40px;
+    padding: 3vw 5vw;
     margin: 30px 0;
     border-radius: 3px;
     color: rgba(71, 37, 37, 0.575);
@@ -240,24 +244,25 @@ body>main .downloadResume{
     transition: box-shadow 0.2s;
 }
 body>main .downloadResume:hover{
-    box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.5);}
+    box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.5);
+}
 .selfIntroduction{
-    max-width: 940px;
-    margin: 20px auto;
+    max-width: 50%;
+    margin: 3vw auto;
     text-align: center;
     font-family: WenQuanYi Micro Hei Mono;
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 1vw;
 }
 section.skills{
-    max-width: 940px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 60px;
 }
 section.portfolio>h2,
 section.skills>h2{
-    font-size:34px;
+    font-size: 8vw;
     line-height: 1.2;
     font-weight:600;
     text-align: center; 
@@ -270,7 +275,7 @@ section.skills>ol{
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.514);
     list-style: none;
     border: 1px solid rgba(128, 128, 128, 0.397);
-    padding: 30px 50px 10px 50px;
+    padding: 3vw 5vw 1vw 5vw;
 }
 section.skills>ol>li{
     float: left;
@@ -284,7 +289,7 @@ section.skills .progressBar{
     height: 5px;
     background-color: rgba(128, 128, 128, 0.192);
     border-radius: 3px;
-    margin: 4px 0 40px 0;
+    margin: 1vw 0 4vw 0;
     overflow: hidden;
 }
 section.skills .progressBar .progress{
@@ -298,7 +303,7 @@ section.skills.offset .progress{
     transform: translateX(-100%);
 }
 section.portfolio{
-    max-width: 940px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -308,24 +313,19 @@ section.portfolio .works{
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 section.portfolio .swiper-container {
-    width: 888px;
-    height: 666px;
+    width: 80vw;
+    height: 60vw;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.514);
 }
 section.portfolio .swiper-button-prev{
-    left: -50px;
-    right: auto;
-    top: 60%;
-    
+    display: none;
 }
 section.portfolio  .swiper-button-next{
-    right: -50px;
-    left: auto;
-    top: 60%;
+    display: none;
 }
 #postMessageForm{
-    max-width: 900px;
+    max-width: 50%;
     margin: 50px auto;
     
 }
