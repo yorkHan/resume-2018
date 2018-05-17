@@ -9,9 +9,9 @@
         for(let i=1;i<aCard.length;i++){
             if(Math.abs(aCard[i].offsetTop-window.scrollY)<Math.abs(aCard[mindex].offsetTop-window.scrollY)){
                 aCard[i].classList.remove('offset')
+                mindex=i
             }
         }
-        aCard[mindex].classList.remove('offset')
         var id=aCard[mindex].id
         var site=document.querySelector('a[href="#'+id+'"]')
         var li=site.parentNode

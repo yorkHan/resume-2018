@@ -334,9 +334,8 @@ section.portfolio  .swiper-button-next{
     display: none;
 }
 #postMessageForm{
-    width: 270px;
-    margin-left: 30px;
-    margin-top: 50px;
+    width: 65vw;
+    margin:5vw auto 0 auto;
 }
 #MessageBoardForm{
     background-color: #F4F8F9;
@@ -382,6 +381,10 @@ section.portfolio  .swiper-button-next{
     font-weight:600;
     text-align: center; 
     margin: 50px 0px;
+}
+#MessageBoardForm ol{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5vw;
 }
 #MessageBoardForm ol>li{
     margin: 10px 0;
