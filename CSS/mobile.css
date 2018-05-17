@@ -101,7 +101,7 @@ a{
     animation:moveToRight 0.5s;
 }
 [data-x].offset{
-    transform: translateY(200px);
+    transform: translateY(50vw);
 }
 [data-x]{
     transform: translateY(0);

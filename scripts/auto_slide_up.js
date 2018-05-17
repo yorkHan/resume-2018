@@ -12,6 +12,7 @@
                 mindex=i
             }
         }
+        aCard[mindex].classList.remove('offset')
         var id=aCard[mindex].id
         var site=document.querySelector('a[href="#'+id+'"]')
         var li=site.parentNode
