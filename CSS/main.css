@@ -367,7 +367,6 @@ section.portfolio  .swiper-button-next{
     border: 1px solid #ddd;
     border-radius: 10px;
     background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(221,221,221,1) 99%);
-    
 }
 #postMessageForm button:hover{
     width: 257px;
