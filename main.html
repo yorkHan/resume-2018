@@ -35,8 +35,7 @@
                         </ul>
                     </li>
                     <li class="subMean"><a href="https://yorkhan.github.io/"  target="_blank">博客</a></li>
-                    <li class="subMean"><a href="#calendars">日历</a></li>
-                    <li class="subMean"><a href="#connect">联系方式</a></li>
+                    <li class="subMean"><a href="#MessageBoard">留言板</a></li>
                     <li class="subMean"><a href="#other">其他</a></li>
                 </ul>
             </nav>
@@ -187,16 +186,16 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
-    <section id="MessageBoard">
+    <section data-x id="MessageBoard">
         <h2>留言板</h2>
-        <ol id="MessageList"></ol>
-        <form id="postMessageForm" action="post">
-            <label for="">用户名</label>
-            <input type="text" name="name">
-            <label for="">内容</label>
-            <input type="text" name="content">
-            <input type="submit" value="提交">
-        </form>
+        <div id="MessageBoardForm">
+            <ol id="MessageList"></ol>
+            <form id="postMessageForm" action="post">
+                <label for="">用户<input type="text" name="name"></label>
+                <label for="">内容<textarea style="resize:none" rows="10" cols="30"></textarea></label>    
+                <button>提交</button>
+            </form>
+        </div>
     </section>
     <script src="./vendors/LeanCloud/av-min.js"></script>
     <script src="./vendors/swiper/swiper.min.js"></script>
@@ -207,6 +206,5 @@
     <script src="./scripts/smoothly_navigation.js"></script>
     <script src="./scripts/topNavBar.js"></script>
     <script src="./scripts/message.js"></script>
-    <script src="./scripts/images.js"></script>
 </body>
 </html>

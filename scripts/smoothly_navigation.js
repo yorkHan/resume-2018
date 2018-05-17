@@ -28,6 +28,7 @@
         },
         scrollToElement:function(element) {
             let top=element.offsetTop
+            console.log(top)
             let currentTop=window.scrollY
             var targetTop=top-80
             var distance=targetTop-currentTop

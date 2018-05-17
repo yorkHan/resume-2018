@@ -37,7 +37,7 @@
         postMessage:function(){
             let myForm=this.form
             let name=myForm.querySelector('input[name=name]').value
-            let content=myForm.querySelector('input[name=content]').value
+            let content=myForm.querySelector('textarea').value
             this.model.save({'name':name,'content':content}).then(function (object) {
                 var li=document.createElement('li')
                 li.innerText=`${object.attributes.name}:${object.attributes.content}`

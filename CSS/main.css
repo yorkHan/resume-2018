@@ -1,10 +1,16 @@
 body{
     background-color: #EFEFEF;
     margin: 0;
+    height: 3000px;
 }
 *{
     margin: 0;
     padding: 0;
+}
+input, button, select, textarea {
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
@@ -100,7 +106,7 @@ a{
     animation:moveToRight 0.5s;
 }
 [data-x].offset{
-    transform: translateY(100px);
+    transform: translateY(200px);
 }
 [data-x]{
     transform: translateY(0);
@@ -326,9 +332,48 @@ section.portfolio  .swiper-button-next{
     top: 60%;
 }
 #postMessageForm{
+    width: 270px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#MessageBoardForm{
+    background-color: #F4F8F9;
+    border: 1px solid white;
+    padding: 20px;
     max-width: 900px;
-    margin: 50px auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.514);
+}
+#postMessageForm>label{
+    width: 3em;
+    display: block;
+}
+#postMessageForm>label input{
+    width: 253px;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
+}
+#postMessageForm>label textarea{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
+    border: none;
+    border-radius: 10px;
+}
+#postMessageForm button{
+    width: 257px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(221,221,221,1) 99%);
     
+}
+#postMessageForm button:hover{
+    width: 257px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
 }
 #MessageBoard>h2{
     font-size:34px;
@@ -337,18 +382,23 @@ section.portfolio  .swiper-button-next{
     text-align: center; 
     margin: 50px 0px;
 }
-#MessageBoard>ol{
+#MessageBoardForm ol>li{
+    margin: 10px 0;
+}
+#MessageBoardForm ol>li:nth-child(odd){
     padding: 20px;
-    max-width: 900px;
-    margin: 20px auto;
     border: 1px solid white;
     background-color: white;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.514);
-}
-#MessageBoard>ol>li{
-    padding: 20px;
-    border-bottom: 1px solid gray;
+    border-radius: 5px;
     list-style: none;
+    
+}
+#MessageBoardForm ol>li:nth-child(even){
+    padding: 20px;
+    border: 1px solid #E7F4FA;
+    background-color: #E7F4FA;
+    list-style: none;
+    border-radius: 5px;
     
 }
 
