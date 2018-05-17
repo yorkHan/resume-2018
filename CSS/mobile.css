@@ -1,7 +1,7 @@
 body{
     background-color: #EFEFEF;
     margin: 0;
-    height: 1500vw;
+    height: 650vw;
 }
 input, button, select, textarea {
     outline: none;
@@ -353,15 +353,20 @@ section.portfolio  .swiper-button-next{
 }
 #postMessageForm>label input{
     width: 60vw;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 10px;
+}
+
+#postMessageForm>label input:focus{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
 }
 #postMessageForm>label textarea{
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 10px;
     width: 60vw;
+}
+#postMessageForm>label textarea:focus{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
 }
 #postMessageForm button{
     width: 60vw;

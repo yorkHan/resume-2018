@@ -102,7 +102,7 @@ a{
     left: 0;
     width: 100%;
     height: 3px;
-    background-color:  #E8676B;
+    background-color:  darkblue;
     animation:moveToRight 0.5s;
 }
 [data-x].offset{
@@ -129,10 +129,10 @@ a{
 }
 .topNavBar .logo .rs{ 
     margin-right: 4px;
-    color:#E8676B;
+    color:darkblue;
 }
 .topNavBar .logo .card { 
-    color:#c1c3c7;
+    color:red;
 }
 .banner{
     height: 515px;
@@ -154,7 +154,7 @@ a{
     padding: 4px 16px;
     line-height: 22px;
     display: inline-block;
-    background-color: #E8676B;
+    background-color: darkblue;
     color: white;
     position: relative;
 }
@@ -172,7 +172,7 @@ hr{
     display: block;
     border: 10px solid transparent;
     width: 0;
-    border-left-color:#E8676B;
+    border-left-color:darkblue;
     border-top:0;
     position: absolute;
     top:100%;
@@ -214,7 +214,7 @@ hr{
     color: gray;
 }
 .usercard footer.media {
-    background: #E8676B;
+    background: darkblue;
     padding: 20px;
     text-align: center;
 }
@@ -227,7 +227,7 @@ hr{
     margin: 0 20px;
 }
 .usercard footer.media>a:hover{
-    background: rgb(223, 51, 56);
+    background: blueviolet;
 }
 .usercard svg{
     width: 20px;
@@ -297,7 +297,7 @@ section.skills .progressBar{
 section.skills .progressBar .progress{
     height: 100%;
     width: 50%;
-    background-color: #E8676B;
+    background-color: darkblue;
     transform: translateX(0);
     transition: all 1s;
 }
@@ -351,15 +351,19 @@ section.portfolio  .swiper-button-next{
 }
 #postMessageForm>label input{
     width: 253px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 10px;
     height: 20px;
+}
+#postMessageForm>label input:focus{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
 }
 #postMessageForm>label textarea{
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 10px;
+}
+#postMessageForm>label textarea:focus{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
 }
 #postMessageForm button{
     width: 257px;

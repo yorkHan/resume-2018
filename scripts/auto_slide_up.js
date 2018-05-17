@@ -8,7 +8,7 @@
         var mindex=0
         for(let i=1;i<aCard.length;i++){
             if(Math.abs(aCard[i].offsetTop-window.scrollY)<Math.abs(aCard[mindex].offsetTop-window.scrollY)){
-                mindex=i
+                aCard[i].classList.remove('offset')
             }
         }
         aCard[mindex].classList.remove('offset')
