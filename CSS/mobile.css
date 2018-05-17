@@ -357,6 +357,7 @@ section.portfolio  .swiper-button-next{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.514);
     border: none;
     border-radius: 10px;
+    width: 60vw;
 }
 #postMessageForm button{
     width: 60vw;
