@@ -38,13 +38,15 @@
             let myForm=this.form
             let name=myForm.querySelector('input[name=name]').value
             let content=myForm.querySelector('textarea').value
-            this.model.save({'name':name,'content':content}).then(function (object) {
-                var li=document.createElement('li')
-                li.innerText=`${object.attributes.name}:${object.attributes.content}`
-                var MessageList=document.querySelector('#MessageList')
-                MessageList.appendChild(li)
-                myForm.querySelector('input[name=content]').value=''
-            })
+            if(name&&content){
+                this.model.save({'name':name,'content':content}).then(function (object) {
+                    var li=document.createElement('li')
+                    li.innerText=`${object.attributes.name}:${object.attributes.content}`
+                    var MessageList=document.querySelector('#MessageList')
+                    MessageList.appendChild(li)
+                    myForm.querySelector('input[name=content]').value=''
+                })
+            }
         },
         loadMessages:function(){
             this.model.fetch().then((Messages) =>{
