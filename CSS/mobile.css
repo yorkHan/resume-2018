@@ -139,7 +139,7 @@ a{
     background-color: rgba(0, 0, 0, 0.26);
 }
 .usercard{
-    max-width: 80%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -50vw;
@@ -183,7 +183,7 @@ hr{
 }
 .usercard .pic>img{
     height: 20vw;
-    width: 18vw;
+    width: 20vw;
 }
 .usercard .text{
     float: right;
@@ -260,7 +260,7 @@ body>main .downloadResume:hover{
     font-size: 1vw;
 }
 section.skills{
-    max-width: 80%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 60px;
@@ -334,14 +334,14 @@ section.portfolio  .swiper-button-next{
     display: none;
 }
 #postMessageForm{
-    width: 65vw;
+    width: 60vw;
     margin:5vw auto 0 auto;
 }
 #MessageBoardForm{
     background-color: #F4F8F9;
     border: 1px solid white;
     padding: 20px;
-    max-width: 80%;
+    max-width: 70%;
     margin: 20px auto;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.514);
